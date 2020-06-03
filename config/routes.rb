@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get 'users' => 'users#new'
   post 'users'=> 'users#create'
   delete 'users' => 'users#destroy'
+
+  get 'rooms/show'
 end

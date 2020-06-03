@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
 
-  get '/users' => 'users#new'
-  post '/users'=> 'users#create'
-  delete '/users' => 'users#destroy'
+  get 'matching' => 'users#index'
+  get 'users' => 'users#new'
+  post 'users'=> 'users#create'
+  delete 'users' => 'users#destroy'
 end

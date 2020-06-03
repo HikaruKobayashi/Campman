@@ -18,7 +18,7 @@ class RealationshipsController < ApplicationController
       flash[:success] = 'ユーザーのフォローを解除しました。'
       redirect_to @user
     else
-      flash[:alert] = 'ユーザーのフォロー解除に失敗しました。'
+      flash.now[:alert] = 'ユーザーのフォロー解除に失敗しました。'
       redirect_to @user
     end
   end
@@ -26,6 +26,6 @@ class RealationshipsController < ApplicationController
   private
 
   def
-    user = User.find params[:follow_id]
+    @user = User.find(params[:relationship][:follow_id])
   end
 end

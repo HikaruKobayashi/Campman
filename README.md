@@ -1,24 +1,6 @@
-# README
+# Campman
+キャンプをしたい人と山を持て余してる人のマッチングアプリを作成する。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発に使用した技術
+- Docker
+- Ruby on Rails

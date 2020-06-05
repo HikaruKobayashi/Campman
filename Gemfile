@@ -74,3 +74,6 @@ gem 'font-awesome-sass', '~> 5.4.1'
 
 # Use devise
 gem 'devise'
+
+# Use acts_as_follower
+gem "acts_as_follower", github: "tcocca/acts_as_follower"

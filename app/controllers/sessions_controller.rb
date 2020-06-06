@@ -5,9 +5,9 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       log_in user
-      redirect_to root_url
+      redirect_to users_path # ログインが成功したらページ遷移
     else
-      render 'new'
+      render 'new' # ログインに失敗したらログインページを再度表示
     end
   end
 
